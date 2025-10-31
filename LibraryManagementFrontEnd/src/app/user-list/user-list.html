@@ -1,0 +1,47 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-between mb-3">
+    <h3>Users</h3>
+    <button class="btn btn-success" (click)="bulkInsert()">Create Bulk Users</button>
+  </div>
+
+  <div class="row mb-3 g-2 align-items-end">
+    <div class="col-md-3">
+      <label class="form-label">From</label>
+      <input type="number" class="form-control" [(ngModel)]="from" min="1" />
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">To</label>
+      <input type="number" class="form-control" [(ngModel)]="to" min="1" />
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-primary" (click)="loadUsers()">Search</button>
+    </div>
+  </div>
+
+  <div *ngIf="loading" class="alert alert-info">Loading...</div>
+
+  <table class="table table-bordered table-striped" *ngIf="!loading && users.length > 0">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.age }}</td>
+        <td>{{ user.timeStamp | date:'short' }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="!loading && users.length === 0" class="alert alert-warning">
+    No users found for this range.
+  </div>
+</div>

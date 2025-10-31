@@ -1,0 +1,100 @@
+# ========================
+# Visual Studio / .NET
+# ========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# .NET-specific
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.ide/
+*.dll
+*.exe
+*.dbmdl
+*.bak
+*.backup
+*.pdb
+*.cache
+*.tmp
+*.temp
+
+# Publish output
+wwwroot/
+publish/
+out/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Entity Framework
+Migrations/obj/
+*.sqlite
+*.mdf
+*.ldf
+
+# Configuration / Secrets
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+*.env
+
+# ========================
+# Visual Studio Code
+# ========================
+.vscode/
+.history/
+*.code-workspace
+
+# ========================
+# System / OS files
+# ========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.swp
+*.swo
+
+# ========================
+# Console App specific
+# ========================
+*.exe
+*.log
+*.out
+*.json.tmp
+
+# ========================
+# Optional - test outputs
+# ========================
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# ========================
+# Optional - temporary tools
+# ========================
+node_modules/
+dist/
+tmp/
+temp/

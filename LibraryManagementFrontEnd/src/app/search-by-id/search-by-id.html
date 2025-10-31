@@ -1,0 +1,37 @@
+<div class="container my-4">
+  <div class="card shadow-sm p-4">
+    <h4 class="text-primary mb-3">Search User By ID</h4>
+
+    <form [formGroup]="form" (ngSubmit)="fetchUser()">
+      <div class="row g-3 align-items-end">
+        <div class="col-md-4">
+          <label class="form-label">User ID</label>
+          <input formControlName="id" type="number" class="form-control" placeholder="Enter user ID" />
+          <div *ngIf="form.controls.id.invalid && form.controls.id.touched" class="text-danger small">
+            ID must be greater than 0.
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <button class="btn btn-primary w-100" type="submit" [disabled]="form.invalid || loading">
+            <span *ngIf="!loading">Fetch</span>
+            <span *ngIf="loading" class="spinner-border spinner-border-sm"></span>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div *ngIf="errorMsg" class="alert alert-danger mt-3">{{ errorMsg }}</div>
+
+    <div *ngIf="user" class="mt-4">
+      <h5>User Details</h5>
+      <table class="table table-bordered w-50">
+        <tr><th>ID</th><td>{{ user.id }}</td></tr>
+        <tr><th>Name</th><td>{{ user.name }}</td></tr>
+        <tr><th>Email</th><td>{{ user.email }}</td></tr>
+        <tr><th>Age</th><td>{{ user.age }}</td></tr>
+        <tr><th>Registered</th><td>{{ user.timeStamp | date:'medium' }}</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
