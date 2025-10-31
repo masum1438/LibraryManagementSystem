@@ -42,6 +42,8 @@ Built with **ASP.NET Core 8 Web API** (backend) and **Angular 20 + Bootstrap 5**
 <img width="1366" height="768" alt="api-list-user" src="https://github.com/user-attachments/assets/752bc886-f6c6-4830-b47b-bafac8c37ed5" />
 <img width="1366" height="768" alt="api-search-id" src="https://github.com/user-attachments/assets/0ab9682d-0258-4f42-8f0e-731ee07a9d1d" />
 
+---
+
 ### Frontend Output:
 <img width="1366" height="768" alt="user-list" src="https://github.com/user-attachments/assets/e4b0d198-7711-41ae-954c-0f6e41c02173" />
 <img width="1366" height="768" alt="view-list-1" src="https://github.com/user-attachments/assets/5da72af4-6914-4e59-8578-195e9de68f44" />
@@ -50,18 +52,32 @@ Built with **ASP.NET Core 8 Web API** (backend) and **Angular 20 + Bootstrap 5**
 <img width="1366" height="768" alt="bulk-create" src="https://github.com/user-attachments/assets/28f03baa-7e1a-4e38-b0e3-b5c845b1bdf1" />
 <img width="1366" height="768" alt="search-id" src="https://github.com/user-attachments/assets/21baa531-f757-47ac-b98c-06a7966a644f" />
 
-###🧰 Tools & Dependencies
-##Backend
+
+---
+
+
+## Tools & Dependencies
+
+### Backend
 
 -Microsoft.EntityFrameworkCore
+
 -Microsoft.AspNetCore.Mvc
+
 -Serilog
+
 -Swashbuckle.AspNetCore (Swagger)
 
-##Frontend
+
+---
+
+### Frontend
 
 -@angular/core, @angular/forms, @angular/router
+
 -bootstrap@5
+
 -rxjs, zone.js
+
 
 
